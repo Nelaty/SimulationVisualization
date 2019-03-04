@@ -1,0 +1,4 @@
+<map id="SimulationScene" name="SimulationScene">
+<area shape="rect" id="node6" href="$class_physics_engine_wrapper.html" title="{PhysicsEngineWrapper\n||+ PhysicsEngineWrapper()\l+ ~PhysicsEngineWrapper()\l+ tick()\l+ getParticleNodeWorld()\l+ getRigidBodyNodeWorld()\l}" alt="" coords="558,169,745,305"/>
+<area shape="rect" id="node8" href="$class_simulation_window.html" title="{SimulationWindow\n||+ SimulationWindow()\l+ ~SimulationWindow()\l+ tick()\l+ initCameras()\l+ initScenes()\l+ changeScene()\l+ changeScene()\l+ getDrawableRegistry()\l+ getGeometryRegistry()\l+ getMaterialRegistry()\l}" alt="" coords="966,132,1131,341"/>
+</map>

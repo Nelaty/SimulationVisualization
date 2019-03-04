@@ -1,0 +1,171 @@
+\hypertarget{class_simulation_scene}{}\section{Simulation\+Scene Class Reference}
+\label{class_simulation_scene}\index{Simulation\+Scene@{Simulation\+Scene}}
+
+
+{\ttfamily \#include $<$Simulation\+Scene.\+h$>$}
+
+
+
+Inheritance diagram for Simulation\+Scene\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_simulation_scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simulation\+Scene\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simulation_scene__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_simulation_scene_a6adc5bb46c9989e666076edcb4e8e2de}{Simulation\+Scene}} (const std\+::string \&name, \mbox{\hyperlink{class_simulation_window}{Simulation\+Window}} $\ast$window)
+\item 
+virtual \mbox{\hyperlink{class_simulation_scene_ab084c186d269ce4576b2dda25fc0fbd6}{$\sim$\+Simulation\+Scene}} ()
+\item 
+void \mbox{\hyperlink{class_simulation_scene_afa830118b974cf6e579876b71ea5fb19}{tick}} (float time\+Delta) override
+\item 
+ec\+::\+Scene\+Renderer $\ast$ \mbox{\hyperlink{class_simulation_scene_aebc710c8b75f155eaab35f11ca825d9c}{get\+Scene\+Renderer}} () const
+\item 
+ec\+::\+Camera $\ast$ \mbox{\hyperlink{class_simulation_scene_a755153bde36d77afa9ad69a300463c31}{get\+Camera}} () const
+\item 
+void \mbox{\hyperlink{class_simulation_scene_a1a671a6caac15d53c5fbc043a58d040b}{set\+Viewport\+Size}} (const glm\+::vec2 \&size) const
+\item 
+virtual void \mbox{\hyperlink{class_simulation_scene_a32468fce8b00310b6e306bf558642913}{reset}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const glm\+::vec2 \& \mbox{\hyperlink{class_simulation_scene_a612b677ff28dbc9f7f6f609432ecf922}{get\+Viewport\+Position}} ()
+\item 
+static const glm\+::vec2 \& \mbox{\hyperlink{class_simulation_scene_a1601590e4029a75f73e46ae2bf8f24f6}{get\+Viewport\+Size}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_simulation_window}{Simulation\+Window}} $\ast$ \mbox{\hyperlink{class_simulation_scene_a704310f4a3436f746afcc197b0893302}{m\+\_\+window}}
+\item 
+\mbox{\hyperlink{class_physics_engine_wrapper}{Physics\+Engine\+Wrapper}} \mbox{\hyperlink{class_simulation_scene_aec843c805c0cad71393fe7cb18fb5c62}{m\+\_\+physics\+Engine}}
+\item 
+std\+::unique\+\_\+ptr$<$ ec\+::\+Scene\+Renderer $>$ \mbox{\hyperlink{class_simulation_scene_a97b314741c8056ae2168f8084926003a}{m\+\_\+scene\+Renderer}}
+\item 
+std\+::unique\+\_\+ptr$<$ ec\+::\+Camera $>$ \mbox{\hyperlink{class_simulation_scene_af3eac48c03330d03c304d33b21dd4d33}{m\+\_\+camera}}
+\item 
+ec\+::\+Keyboard $\ast$ \mbox{\hyperlink{class_simulation_scene_a8c6d930754996e9860d7ea3d63529a93}{m\+\_\+keyboard}}
+\item 
+ec\+::\+Mouse $\ast$ \mbox{\hyperlink{class_simulation_scene_aa48e90426a32da44796da2016a4ed10a}{m\+\_\+mouse}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class for scenes with physic simulation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_simulation_scene_a6adc5bb46c9989e666076edcb4e8e2de}\label{class_simulation_scene_a6adc5bb46c9989e666076edcb4e8e2de}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!Simulation\+Scene@{Simulation\+Scene}}
+\index{Simulation\+Scene@{Simulation\+Scene}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{Simulation\+Scene()}{SimulationScene()}}
+{\footnotesize\ttfamily Simulation\+Scene\+::\+Simulation\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{class_simulation_window}{Simulation\+Window}} $\ast$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_simulation_scene_ab084c186d269ce4576b2dda25fc0fbd6}\label{class_simulation_scene_ab084c186d269ce4576b2dda25fc0fbd6}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!````~Simulation\+Scene@{$\sim$\+Simulation\+Scene}}
+\index{````~Simulation\+Scene@{$\sim$\+Simulation\+Scene}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{$\sim$\+Simulation\+Scene()}{~SimulationScene()}}
+{\footnotesize\ttfamily Simulation\+Scene\+::$\sim$\+Simulation\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulation_scene_a755153bde36d77afa9ad69a300463c31}\label{class_simulation_scene_a755153bde36d77afa9ad69a300463c31}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!get\+Camera@{get\+Camera}}
+\index{get\+Camera@{get\+Camera}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{get\+Camera()}{getCamera()}}
+{\footnotesize\ttfamily ec\+::\+Camera $\ast$ Simulation\+Scene\+::get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_simulation_scene_aebc710c8b75f155eaab35f11ca825d9c}\label{class_simulation_scene_aebc710c8b75f155eaab35f11ca825d9c}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!get\+Scene\+Renderer@{get\+Scene\+Renderer}}
+\index{get\+Scene\+Renderer@{get\+Scene\+Renderer}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{get\+Scene\+Renderer()}{getSceneRenderer()}}
+{\footnotesize\ttfamily ec\+::\+Scene\+Renderer $\ast$ Simulation\+Scene\+::get\+Scene\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_simulation_scene_a612b677ff28dbc9f7f6f609432ecf922}\label{class_simulation_scene_a612b677ff28dbc9f7f6f609432ecf922}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!get\+Viewport\+Position@{get\+Viewport\+Position}}
+\index{get\+Viewport\+Position@{get\+Viewport\+Position}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{get\+Viewport\+Position()}{getViewportPosition()}}
+{\footnotesize\ttfamily const glm\+::vec2 \& Simulation\+Scene\+::get\+Viewport\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simulation_scene_a1601590e4029a75f73e46ae2bf8f24f6}\label{class_simulation_scene_a1601590e4029a75f73e46ae2bf8f24f6}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!get\+Viewport\+Size@{get\+Viewport\+Size}}
+\index{get\+Viewport\+Size@{get\+Viewport\+Size}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{get\+Viewport\+Size()}{getViewportSize()}}
+{\footnotesize\ttfamily const glm\+::vec2 \& Simulation\+Scene\+::get\+Viewport\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simulation_scene_a32468fce8b00310b6e306bf558642913}\label{class_simulation_scene_a32468fce8b00310b6e306bf558642913}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!reset@{reset}}
+\index{reset@{reset}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Simulation\+Scene\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_simulation_scene_a1a671a6caac15d53c5fbc043a58d040b}\label{class_simulation_scene_a1a671a6caac15d53c5fbc043a58d040b}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!set\+Viewport\+Size@{set\+Viewport\+Size}}
+\index{set\+Viewport\+Size@{set\+Viewport\+Size}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{set\+Viewport\+Size()}{setViewportSize()}}
+{\footnotesize\ttfamily void Simulation\+Scene\+::set\+Viewport\+Size (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{size }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_simulation_scene_afa830118b974cf6e579876b71ea5fb19}\label{class_simulation_scene_afa830118b974cf6e579876b71ea5fb19}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!tick@{tick}}
+\index{tick@{tick}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Simulation\+Scene\+::tick (\begin{DoxyParamCaption}\item[{float}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_simulation_scene_af3eac48c03330d03c304d33b21dd4d33}\label{class_simulation_scene_af3eac48c03330d03c304d33b21dd4d33}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!m\+\_\+camera@{m\+\_\+camera}}
+\index{m\+\_\+camera@{m\+\_\+camera}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+camera}{m\_camera}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ec\+::\+Camera$>$ Simulation\+Scene\+::m\+\_\+camera\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_simulation_scene_a8c6d930754996e9860d7ea3d63529a93}\label{class_simulation_scene_a8c6d930754996e9860d7ea3d63529a93}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!m\+\_\+keyboard@{m\+\_\+keyboard}}
+\index{m\+\_\+keyboard@{m\+\_\+keyboard}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+keyboard}{m\_keyboard}}
+{\footnotesize\ttfamily ec\+::\+Keyboard$\ast$ Simulation\+Scene\+::m\+\_\+keyboard\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_simulation_scene_aa48e90426a32da44796da2016a4ed10a}\label{class_simulation_scene_aa48e90426a32da44796da2016a4ed10a}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!m\+\_\+mouse@{m\+\_\+mouse}}
+\index{m\+\_\+mouse@{m\+\_\+mouse}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+mouse}{m\_mouse}}
+{\footnotesize\ttfamily ec\+::\+Mouse$\ast$ Simulation\+Scene\+::m\+\_\+mouse\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_simulation_scene_aec843c805c0cad71393fe7cb18fb5c62}\label{class_simulation_scene_aec843c805c0cad71393fe7cb18fb5c62}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!m\+\_\+physics\+Engine@{m\+\_\+physics\+Engine}}
+\index{m\+\_\+physics\+Engine@{m\+\_\+physics\+Engine}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+physics\+Engine}{m\_physicsEngine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_physics_engine_wrapper}{Physics\+Engine\+Wrapper}} Simulation\+Scene\+::m\+\_\+physics\+Engine\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_simulation_scene_a97b314741c8056ae2168f8084926003a}\label{class_simulation_scene_a97b314741c8056ae2168f8084926003a}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!m\+\_\+scene\+Renderer@{m\+\_\+scene\+Renderer}}
+\index{m\+\_\+scene\+Renderer@{m\+\_\+scene\+Renderer}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+scene\+Renderer}{m\_sceneRenderer}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ec\+::\+Scene\+Renderer$>$ Simulation\+Scene\+::m\+\_\+scene\+Renderer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_simulation_scene_a704310f4a3436f746afcc197b0893302}\label{class_simulation_scene_a704310f4a3436f746afcc197b0893302}} 
+\index{Simulation\+Scene@{Simulation\+Scene}!m\+\_\+window@{m\+\_\+window}}
+\index{m\+\_\+window@{m\+\_\+window}!Simulation\+Scene@{Simulation\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+window}{m\_window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_simulation_window}{Simulation\+Window}}$\ast$ Simulation\+Scene\+::m\+\_\+window\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Sim/\+Sim/src/\mbox{\hyperlink{_simulation_scene_8h}{Simulation\+Scene.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Sim/\+Sim/src/\mbox{\hyperlink{_simulation_scene_8cpp}{Simulation\+Scene.\+cpp}}\end{DoxyCompactItemize}

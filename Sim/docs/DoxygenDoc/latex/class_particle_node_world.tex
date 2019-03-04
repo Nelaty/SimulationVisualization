@@ -1,0 +1,120 @@
+\hypertarget{class_particle_node_world}{}\section{Particle\+Node\+World Class Reference}
+\label{class_particle_node_world}\index{Particle\+Node\+World@{Particle\+Node\+World}}
+
+
+{\ttfamily \#include $<$Particle\+Node\+World.\+h$>$}
+
+
+
+Collaboration diagram for Particle\+Node\+World\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_particle_node_world__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_particle_node_world_a7d4a427af20c82cbcba2670899392f33}{Particle\+World\+\_\+\+Ptr}} = std\+::unique\+\_\+ptr$<$ r3\+::\+Particle\+World $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_particle_node_world_a54a76a29bfc91fa573d654ba6f582568}{Particle\+Node\+World}} ()
+\item 
+\mbox{\hyperlink{class_particle_node_world_a7f8e2e6e6f7290c0dc62e1e5ed68ff03}{$\sim$\+Particle\+Node\+World}} ()
+\item 
+void \mbox{\hyperlink{class_particle_node_world_ad4ec6dd216a026ea9199a3c4b18e380b}{update}} ()
+\begin{DoxyCompactList}\small\item\em Update all particle nodes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_particle_node_world_a384ebb3eab353b6508a4eae8d2c8ec95}{add\+Particle\+Node}} (\mbox{\hyperlink{class_particle_node}{Particle\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Register a new particle node. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_particle_node_world_ae63b0fc7c346b724ae73a050c181d16c}{remove\+Particle\+Node}} (\mbox{\hyperlink{class_particle_node}{Particle\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Unregister an already registered particle node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_particle_node_world_a19654bc33ccf9caa6265254e13768aa3}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Unregister all currently registered particle nodes. \end{DoxyCompactList}\item 
+r3\+::\+Particle\+World $\ast$ \mbox{\hyperlink{class_particle_node_world_a116327867d29eedea0781ea604b499ee}{get\+World}} () const
+\begin{DoxyCompactList}\small\item\em Get the particle world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_particle_node_world_a7d4a427af20c82cbcba2670899392f33}\label{class_particle_node_world_a7d4a427af20c82cbcba2670899392f33}} 
+\index{Particle\+Node\+World@{Particle\+Node\+World}!Particle\+World\+\_\+\+Ptr@{Particle\+World\+\_\+\+Ptr}}
+\index{Particle\+World\+\_\+\+Ptr@{Particle\+World\+\_\+\+Ptr}!Particle\+Node\+World@{Particle\+Node\+World}}
+\subsubsection{\texorpdfstring{Particle\+World\+\_\+\+Ptr}{ParticleWorld\_Ptr}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{class_particle_node_world_a7d4a427af20c82cbcba2670899392f33}{Particle\+Node\+World\+::\+Particle\+World\+\_\+\+Ptr}} =  std\+::unique\+\_\+ptr$<$r3\+::\+Particle\+World$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_particle_node_world_a54a76a29bfc91fa573d654ba6f582568}\label{class_particle_node_world_a54a76a29bfc91fa573d654ba6f582568}} 
+\index{Particle\+Node\+World@{Particle\+Node\+World}!Particle\+Node\+World@{Particle\+Node\+World}}
+\index{Particle\+Node\+World@{Particle\+Node\+World}!Particle\+Node\+World@{Particle\+Node\+World}}
+\subsubsection{\texorpdfstring{Particle\+Node\+World()}{ParticleNodeWorld()}}
+{\footnotesize\ttfamily Particle\+Node\+World\+::\+Particle\+Node\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_particle_node_world_a7f8e2e6e6f7290c0dc62e1e5ed68ff03}\label{class_particle_node_world_a7f8e2e6e6f7290c0dc62e1e5ed68ff03}} 
+\index{Particle\+Node\+World@{Particle\+Node\+World}!````~Particle\+Node\+World@{$\sim$\+Particle\+Node\+World}}
+\index{````~Particle\+Node\+World@{$\sim$\+Particle\+Node\+World}!Particle\+Node\+World@{Particle\+Node\+World}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle\+Node\+World()}{~ParticleNodeWorld()}}
+{\footnotesize\ttfamily Particle\+Node\+World\+::$\sim$\+Particle\+Node\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_particle_node_world_a384ebb3eab353b6508a4eae8d2c8ec95}\label{class_particle_node_world_a384ebb3eab353b6508a4eae8d2c8ec95}} 
+\index{Particle\+Node\+World@{Particle\+Node\+World}!add\+Particle\+Node@{add\+Particle\+Node}}
+\index{add\+Particle\+Node@{add\+Particle\+Node}!Particle\+Node\+World@{Particle\+Node\+World}}
+\subsubsection{\texorpdfstring{add\+Particle\+Node()}{addParticleNode()}}
+{\footnotesize\ttfamily void Particle\+Node\+World\+::add\+Particle\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_node}{Particle\+Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Register a new particle node. 
+
+\mbox{\Hypertarget{class_particle_node_world_a19654bc33ccf9caa6265254e13768aa3}\label{class_particle_node_world_a19654bc33ccf9caa6265254e13768aa3}} 
+\index{Particle\+Node\+World@{Particle\+Node\+World}!clear@{clear}}
+\index{clear@{clear}!Particle\+Node\+World@{Particle\+Node\+World}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Particle\+Node\+World\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unregister all currently registered particle nodes. 
+
+\mbox{\Hypertarget{class_particle_node_world_a116327867d29eedea0781ea604b499ee}\label{class_particle_node_world_a116327867d29eedea0781ea604b499ee}} 
+\index{Particle\+Node\+World@{Particle\+Node\+World}!get\+World@{get\+World}}
+\index{get\+World@{get\+World}!Particle\+Node\+World@{Particle\+Node\+World}}
+\subsubsection{\texorpdfstring{get\+World()}{getWorld()}}
+{\footnotesize\ttfamily r3\+::\+Particle\+World $\ast$ Particle\+Node\+World\+::get\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the particle world. 
+
+\mbox{\Hypertarget{class_particle_node_world_ae63b0fc7c346b724ae73a050c181d16c}\label{class_particle_node_world_ae63b0fc7c346b724ae73a050c181d16c}} 
+\index{Particle\+Node\+World@{Particle\+Node\+World}!remove\+Particle\+Node@{remove\+Particle\+Node}}
+\index{remove\+Particle\+Node@{remove\+Particle\+Node}!Particle\+Node\+World@{Particle\+Node\+World}}
+\subsubsection{\texorpdfstring{remove\+Particle\+Node()}{removeParticleNode()}}
+{\footnotesize\ttfamily bool Particle\+Node\+World\+::remove\+Particle\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_node}{Particle\+Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Unregister an already registered particle node. 
+
+\mbox{\Hypertarget{class_particle_node_world_ad4ec6dd216a026ea9199a3c4b18e380b}\label{class_particle_node_world_ad4ec6dd216a026ea9199a3c4b18e380b}} 
+\index{Particle\+Node\+World@{Particle\+Node\+World}!update@{update}}
+\index{update@{update}!Particle\+Node\+World@{Particle\+Node\+World}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Particle\+Node\+World\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update all particle nodes. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Sim/\+Sim/src/\+Physic\+Interfaces/\mbox{\hyperlink{_particle_node_world_8h}{Particle\+Node\+World.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Sim/\+Sim/src/\+Physic\+Interfaces/\mbox{\hyperlink{_particle_node_world_8cpp}{Particle\+Node\+World.\+cpp}}\end{DoxyCompactItemize}

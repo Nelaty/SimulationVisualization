@@ -1,0 +1,122 @@
+\hypertarget{class_simulation_window}{}\section{Simulation\+Window Class Reference}
+\label{class_simulation_window}\index{Simulation\+Window@{Simulation\+Window}}
+
+
+{\ttfamily \#include $<$Simulation\+Window.\+h$>$}
+
+
+
+Inheritance diagram for Simulation\+Window\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{class_simulation_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simulation\+Window\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{class_simulation_window__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_simulation_window_af21a1b7626066495d16674dccd8c5fa7}{Simulation\+Window}} (unsigned int width, unsigned int height, const std\+::string \&title)
+\item 
+\mbox{\hyperlink{class_simulation_window_a1bad20391bd8ee4c2366bd1ac667ecdf}{$\sim$\+Simulation\+Window}} ()
+\item 
+void \mbox{\hyperlink{class_simulation_window_a7cde85cc846dceb4cbb9913f861b495a}{tick}} (float time\+Delta) override
+\item 
+void \mbox{\hyperlink{class_simulation_window_a787e405dd71c59fcf2dd58e75d233020}{init\+Cameras}} ()
+\item 
+void \mbox{\hyperlink{class_simulation_window_a60ebe43a626ec7acebadc93d37de8b70}{init\+Scenes}} ()
+\item 
+void \mbox{\hyperlink{class_simulation_window_a3f08510bb143568c18c20bd7528cb6a4}{change\+Scene}} (\mbox{\hyperlink{class_simulation_scene}{Simulation\+Scene}} $\ast$scene)
+\item 
+void \mbox{\hyperlink{class_simulation_window_a49e6df3f3396dbbe16dbc64c1ed7b315}{change\+Scene}} (const std\+::string \&scene\+Name)
+\item 
+const ec\+::\+Resource\+Registry$<$ ec\+::\+Drawable $>$ \& \mbox{\hyperlink{class_simulation_window_ae04cef316702d65cf4d6e119fa4c6cae}{get\+Drawable\+Registry}} () const
+\item 
+const ec\+::\+Resource\+Registry$<$ ec\+::\+Geometry $>$ \& \mbox{\hyperlink{class_simulation_window_aee0f598e5e41c2c4d8142075a294c13a}{get\+Geometry\+Registry}} () const
+\item 
+const ec\+::\+Resource\+Registry$<$ ec\+::\+Material $>$ \& \mbox{\hyperlink{class_simulation_window_a0be5e363792b95388f1dfae85560c5f7}{get\+Material\+Registry}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This window contains a set of scenes, which we wish to simulate. It has multiple resource registries to manage materials, geometry, drawables and shaders used for visualization. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_simulation_window_af21a1b7626066495d16674dccd8c5fa7}\label{class_simulation_window_af21a1b7626066495d16674dccd8c5fa7}} 
+\index{Simulation\+Window@{Simulation\+Window}!Simulation\+Window@{Simulation\+Window}}
+\index{Simulation\+Window@{Simulation\+Window}!Simulation\+Window@{Simulation\+Window}}
+\subsubsection{\texorpdfstring{Simulation\+Window()}{SimulationWindow()}}
+{\footnotesize\ttfamily Simulation\+Window\+::\+Simulation\+Window (\begin{DoxyParamCaption}\item[{unsigned int}]{width,  }\item[{unsigned int}]{height,  }\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_simulation_window_a1bad20391bd8ee4c2366bd1ac667ecdf}\label{class_simulation_window_a1bad20391bd8ee4c2366bd1ac667ecdf}} 
+\index{Simulation\+Window@{Simulation\+Window}!````~Simulation\+Window@{$\sim$\+Simulation\+Window}}
+\index{````~Simulation\+Window@{$\sim$\+Simulation\+Window}!Simulation\+Window@{Simulation\+Window}}
+\subsubsection{\texorpdfstring{$\sim$\+Simulation\+Window()}{~SimulationWindow()}}
+{\footnotesize\ttfamily Simulation\+Window\+::$\sim$\+Simulation\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulation_window_a3f08510bb143568c18c20bd7528cb6a4}\label{class_simulation_window_a3f08510bb143568c18c20bd7528cb6a4}} 
+\index{Simulation\+Window@{Simulation\+Window}!change\+Scene@{change\+Scene}}
+\index{change\+Scene@{change\+Scene}!Simulation\+Window@{Simulation\+Window}}
+\subsubsection{\texorpdfstring{change\+Scene()}{changeScene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Simulation\+Window\+::change\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_scene}{Simulation\+Scene}} $\ast$}]{scene }\end{DoxyParamCaption})}
+
+Change the currently viewed scene. \mbox{\Hypertarget{class_simulation_window_a49e6df3f3396dbbe16dbc64c1ed7b315}\label{class_simulation_window_a49e6df3f3396dbbe16dbc64c1ed7b315}} 
+\index{Simulation\+Window@{Simulation\+Window}!change\+Scene@{change\+Scene}}
+\index{change\+Scene@{change\+Scene}!Simulation\+Window@{Simulation\+Window}}
+\subsubsection{\texorpdfstring{change\+Scene()}{changeScene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Simulation\+Window\+::change\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name }\end{DoxyParamCaption})}
+
+Change the currently viewed scene. \mbox{\Hypertarget{class_simulation_window_ae04cef316702d65cf4d6e119fa4c6cae}\label{class_simulation_window_ae04cef316702d65cf4d6e119fa4c6cae}} 
+\index{Simulation\+Window@{Simulation\+Window}!get\+Drawable\+Registry@{get\+Drawable\+Registry}}
+\index{get\+Drawable\+Registry@{get\+Drawable\+Registry}!Simulation\+Window@{Simulation\+Window}}
+\subsubsection{\texorpdfstring{get\+Drawable\+Registry()}{getDrawableRegistry()}}
+{\footnotesize\ttfamily const ec\+::\+Resource\+Registry$<$ ec\+::\+Drawable $>$ \& Simulation\+Window\+::get\+Drawable\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the drawable registry. \mbox{\Hypertarget{class_simulation_window_aee0f598e5e41c2c4d8142075a294c13a}\label{class_simulation_window_aee0f598e5e41c2c4d8142075a294c13a}} 
+\index{Simulation\+Window@{Simulation\+Window}!get\+Geometry\+Registry@{get\+Geometry\+Registry}}
+\index{get\+Geometry\+Registry@{get\+Geometry\+Registry}!Simulation\+Window@{Simulation\+Window}}
+\subsubsection{\texorpdfstring{get\+Geometry\+Registry()}{getGeometryRegistry()}}
+{\footnotesize\ttfamily const ec\+::\+Resource\+Registry$<$ ec\+::\+Geometry $>$ \& Simulation\+Window\+::get\+Geometry\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the geometry registry. \mbox{\Hypertarget{class_simulation_window_a0be5e363792b95388f1dfae85560c5f7}\label{class_simulation_window_a0be5e363792b95388f1dfae85560c5f7}} 
+\index{Simulation\+Window@{Simulation\+Window}!get\+Material\+Registry@{get\+Material\+Registry}}
+\index{get\+Material\+Registry@{get\+Material\+Registry}!Simulation\+Window@{Simulation\+Window}}
+\subsubsection{\texorpdfstring{get\+Material\+Registry()}{getMaterialRegistry()}}
+{\footnotesize\ttfamily const ec\+::\+Resource\+Registry$<$ ec\+::\+Material $>$ \& Simulation\+Window\+::get\+Material\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the material registry. \mbox{\Hypertarget{class_simulation_window_a787e405dd71c59fcf2dd58e75d233020}\label{class_simulation_window_a787e405dd71c59fcf2dd58e75d233020}} 
+\index{Simulation\+Window@{Simulation\+Window}!init\+Cameras@{init\+Cameras}}
+\index{init\+Cameras@{init\+Cameras}!Simulation\+Window@{Simulation\+Window}}
+\subsubsection{\texorpdfstring{init\+Cameras()}{initCameras()}}
+{\footnotesize\ttfamily void Simulation\+Window\+::init\+Cameras (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_simulation_window_a60ebe43a626ec7acebadc93d37de8b70}\label{class_simulation_window_a60ebe43a626ec7acebadc93d37de8b70}} 
+\index{Simulation\+Window@{Simulation\+Window}!init\+Scenes@{init\+Scenes}}
+\index{init\+Scenes@{init\+Scenes}!Simulation\+Window@{Simulation\+Window}}
+\subsubsection{\texorpdfstring{init\+Scenes()}{initScenes()}}
+{\footnotesize\ttfamily void Simulation\+Window\+::init\+Scenes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_simulation_window_a7cde85cc846dceb4cbb9913f861b495a}\label{class_simulation_window_a7cde85cc846dceb4cbb9913f861b495a}} 
+\index{Simulation\+Window@{Simulation\+Window}!tick@{tick}}
+\index{tick@{tick}!Simulation\+Window@{Simulation\+Window}}
+\subsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Simulation\+Window\+::tick (\begin{DoxyParamCaption}\item[{float}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Sim/\+Sim/src/\mbox{\hyperlink{_simulation_window_8h}{Simulation\+Window.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Sim/\+Sim/src/\mbox{\hyperlink{_simulation_window_8cpp}{Simulation\+Window.\+cpp}}\end{DoxyCompactItemize}

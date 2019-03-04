@@ -1,0 +1,6 @@
+[submodule "EyeCandy3D"]
+	path = EyeCandy3D
+	url = https://github.com/Nelaty/EyeCandy3D
+[submodule "Rumble3D"]
+	path = Rumble3D
+	url = https://github.com/Nelaty/Rumble3D.git

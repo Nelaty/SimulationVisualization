@@ -1,0 +1,123 @@
+\hypertarget{class_rigid_body_node_world}{}\section{Rigid\+Body\+Node\+World Class Reference}
+\label{class_rigid_body_node_world}\index{Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}}
+
+
+{\ttfamily \#include $<$Rigid\+Body\+Node\+World.\+h$>$}
+
+
+
+Collaboration diagram for Rigid\+Body\+Node\+World\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_rigid_body_node_world__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_rigid_body_node_world_a34a1badfc25cc91284fb98c9421bd35a}{Rigid\+Body\+World\+\_\+\+Ptr}} = std\+::unique\+\_\+ptr$<$ r3\+::\+Rigid\+Body\+World $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rigid_body_node_world_a44345ab3fc624d3d100974f854468f68}{Rigid\+Body\+Node\+World}} ()
+\item 
+\mbox{\hyperlink{class_rigid_body_node_world_ac6a0800e44f827f97f3da6c68b53eabd}{$\sim$\+Rigid\+Body\+Node\+World}} ()
+\item 
+void \mbox{\hyperlink{class_rigid_body_node_world_a3b381c6da9b1374eb12117c6e8d0b57a}{update}} ()
+\begin{DoxyCompactList}\small\item\em Update all registered rigid body nodes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rigid_body_node_world_a1dc9da65de6b73fe78b08523eb7c6d5f}{add\+Rigid\+Body\+Node}} (\mbox{\hyperlink{class_rigid_body_node}{Rigid\+Body\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Register a new rigid body node. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rigid_body_node_world_a444034dce9139e77f7714779afb04235}{remove\+Rigid\+Body\+Node}} (\mbox{\hyperlink{class_rigid_body_node}{Rigid\+Body\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Unregister an already registered rigid body node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rigid_body_node_world_a3795fdb1b75c0da1286627e2c9b63830}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Unregister all currently registered rigid body nodes. \end{DoxyCompactList}\item 
+r3\+::\+Rigid\+Body\+World $\ast$ \mbox{\hyperlink{class_rigid_body_node_world_aa1ddbb33d36e112134c54cbb5483df26}{get\+World}} () const
+\begin{DoxyCompactList}\small\item\em Get the rigid body world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_rigid_body_node_world_a34a1badfc25cc91284fb98c9421bd35a}\label{class_rigid_body_node_world_a34a1badfc25cc91284fb98c9421bd35a}} 
+\index{Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}!Rigid\+Body\+World\+\_\+\+Ptr@{Rigid\+Body\+World\+\_\+\+Ptr}}
+\index{Rigid\+Body\+World\+\_\+\+Ptr@{Rigid\+Body\+World\+\_\+\+Ptr}!Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}}
+\subsubsection{\texorpdfstring{Rigid\+Body\+World\+\_\+\+Ptr}{RigidBodyWorld\_Ptr}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{class_rigid_body_node_world_a34a1badfc25cc91284fb98c9421bd35a}{Rigid\+Body\+Node\+World\+::\+Rigid\+Body\+World\+\_\+\+Ptr}} =  std\+::unique\+\_\+ptr$<$r3\+::\+Rigid\+Body\+World$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rigid_body_node_world_a44345ab3fc624d3d100974f854468f68}\label{class_rigid_body_node_world_a44345ab3fc624d3d100974f854468f68}} 
+\index{Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}!Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}}
+\index{Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}!Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}}
+\subsubsection{\texorpdfstring{Rigid\+Body\+Node\+World()}{RigidBodyNodeWorld()}}
+{\footnotesize\ttfamily Rigid\+Body\+Node\+World\+::\+Rigid\+Body\+Node\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_rigid_body_node_world_ac6a0800e44f827f97f3da6c68b53eabd}\label{class_rigid_body_node_world_ac6a0800e44f827f97f3da6c68b53eabd}} 
+\index{Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}!````~Rigid\+Body\+Node\+World@{$\sim$\+Rigid\+Body\+Node\+World}}
+\index{````~Rigid\+Body\+Node\+World@{$\sim$\+Rigid\+Body\+Node\+World}!Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}}
+\subsubsection{\texorpdfstring{$\sim$\+Rigid\+Body\+Node\+World()}{~RigidBodyNodeWorld()}}
+{\footnotesize\ttfamily Rigid\+Body\+Node\+World\+::$\sim$\+Rigid\+Body\+Node\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rigid_body_node_world_a1dc9da65de6b73fe78b08523eb7c6d5f}\label{class_rigid_body_node_world_a1dc9da65de6b73fe78b08523eb7c6d5f}} 
+\index{Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}!add\+Rigid\+Body\+Node@{add\+Rigid\+Body\+Node}}
+\index{add\+Rigid\+Body\+Node@{add\+Rigid\+Body\+Node}!Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}}
+\subsubsection{\texorpdfstring{add\+Rigid\+Body\+Node()}{addRigidBodyNode()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Node\+World\+::add\+Rigid\+Body\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rigid_body_node}{Rigid\+Body\+Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Register a new rigid body node. 
+
+\mbox{\Hypertarget{class_rigid_body_node_world_a3795fdb1b75c0da1286627e2c9b63830}\label{class_rigid_body_node_world_a3795fdb1b75c0da1286627e2c9b63830}} 
+\index{Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}!clear@{clear}}
+\index{clear@{clear}!Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Node\+World\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unregister all currently registered rigid body nodes. 
+
+\mbox{\Hypertarget{class_rigid_body_node_world_aa1ddbb33d36e112134c54cbb5483df26}\label{class_rigid_body_node_world_aa1ddbb33d36e112134c54cbb5483df26}} 
+\index{Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}!get\+World@{get\+World}}
+\index{get\+World@{get\+World}!Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}}
+\subsubsection{\texorpdfstring{get\+World()}{getWorld()}}
+{\footnotesize\ttfamily r3\+::\+Rigid\+Body\+World $\ast$ Rigid\+Body\+Node\+World\+::get\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the rigid body world. 
+
+\mbox{\Hypertarget{class_rigid_body_node_world_a444034dce9139e77f7714779afb04235}\label{class_rigid_body_node_world_a444034dce9139e77f7714779afb04235}} 
+\index{Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}!remove\+Rigid\+Body\+Node@{remove\+Rigid\+Body\+Node}}
+\index{remove\+Rigid\+Body\+Node@{remove\+Rigid\+Body\+Node}!Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}}
+\subsubsection{\texorpdfstring{remove\+Rigid\+Body\+Node()}{removeRigidBodyNode()}}
+{\footnotesize\ttfamily bool Rigid\+Body\+Node\+World\+::remove\+Rigid\+Body\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rigid_body_node}{Rigid\+Body\+Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Unregister an already registered rigid body node. 
+
+\begin{DoxyReturn}{Returns}
+True if the rigid body node was found, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rigid_body_node_world_a3b381c6da9b1374eb12117c6e8d0b57a}\label{class_rigid_body_node_world_a3b381c6da9b1374eb12117c6e8d0b57a}} 
+\index{Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}!update@{update}}
+\index{update@{update}!Rigid\+Body\+Node\+World@{Rigid\+Body\+Node\+World}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Rigid\+Body\+Node\+World\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update all registered rigid body nodes. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Sim/\+Sim/src/\+Physic\+Interfaces/\mbox{\hyperlink{_rigid_body_node_world_8h}{Rigid\+Body\+Node\+World.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Sim/\+Sim/src/\+Physic\+Interfaces/\mbox{\hyperlink{_rigid_body_node_world_8cpp}{Rigid\+Body\+Node\+World.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{class_physics_engine_wrapper}{}\section{Physics\+Engine\+Wrapper Class Reference}
+\label{class_physics_engine_wrapper}\index{Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}}
+
+
+{\ttfamily \#include $<$Physics\+Engine\+Wrapper.\+h$>$}
+
+
+
+Collaboration diagram for Physics\+Engine\+Wrapper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_physics_engine_wrapper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_physics_engine_wrapper_a842bf2a6668082cbc4568e0212d16cc9}{Particle\+Node\+World\+\_\+\+Ptr}} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_particle_node_world}{Particle\+Node\+World}} $>$
+\item 
+using \mbox{\hyperlink{class_physics_engine_wrapper_a3c72d58c14dbb32642177a6a7aa73368}{Rigid\+Body\+Node\+World\+\_\+\+Ptr}} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_rigid_body_node_world}{Rigid\+Body\+Node\+World}} $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_physics_engine_wrapper_a9927ccae5bfa6fff5a329bcd55fdb006}{Physics\+Engine\+Wrapper}} ()
+\item 
+\mbox{\hyperlink{class_physics_engine_wrapper_aa918612e647ac8e0d5510d991752096e}{$\sim$\+Physics\+Engine\+Wrapper}} ()
+\item 
+void \mbox{\hyperlink{class_physics_engine_wrapper_ab373f860362e7c74dfa0eabfffe10bec}{tick}} (float time\+Delta)
+\item 
+\mbox{\hyperlink{class_particle_node_world}{Particle\+Node\+World}} $\ast$ \mbox{\hyperlink{class_physics_engine_wrapper_a616efbb6a5a787618e0d07eef552e876}{get\+Particle\+Node\+World}} () const
+\item 
+\mbox{\hyperlink{class_rigid_body_node_world}{Rigid\+Body\+Node\+World}} $\ast$ \mbox{\hyperlink{class_physics_engine_wrapper_af5d784792df1ea0186bcf21fd0c7d115}{get\+Rigid\+Body\+Node\+World}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_physics_engine_wrapper_a842bf2a6668082cbc4568e0212d16cc9}\label{class_physics_engine_wrapper_a842bf2a6668082cbc4568e0212d16cc9}} 
+\index{Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}!Particle\+Node\+World\+\_\+\+Ptr@{Particle\+Node\+World\+\_\+\+Ptr}}
+\index{Particle\+Node\+World\+\_\+\+Ptr@{Particle\+Node\+World\+\_\+\+Ptr}!Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}}
+\subsubsection{\texorpdfstring{Particle\+Node\+World\+\_\+\+Ptr}{ParticleNodeWorld\_Ptr}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{class_physics_engine_wrapper_a842bf2a6668082cbc4568e0212d16cc9}{Physics\+Engine\+Wrapper\+::\+Particle\+Node\+World\+\_\+\+Ptr}} =  std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_particle_node_world}{Particle\+Node\+World}}$>$}
+
+\mbox{\Hypertarget{class_physics_engine_wrapper_a3c72d58c14dbb32642177a6a7aa73368}\label{class_physics_engine_wrapper_a3c72d58c14dbb32642177a6a7aa73368}} 
+\index{Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}!Rigid\+Body\+Node\+World\+\_\+\+Ptr@{Rigid\+Body\+Node\+World\+\_\+\+Ptr}}
+\index{Rigid\+Body\+Node\+World\+\_\+\+Ptr@{Rigid\+Body\+Node\+World\+\_\+\+Ptr}!Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}}
+\subsubsection{\texorpdfstring{Rigid\+Body\+Node\+World\+\_\+\+Ptr}{RigidBodyNodeWorld\_Ptr}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{class_physics_engine_wrapper_a3c72d58c14dbb32642177a6a7aa73368}{Physics\+Engine\+Wrapper\+::\+Rigid\+Body\+Node\+World\+\_\+\+Ptr}} =  std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_rigid_body_node_world}{Rigid\+Body\+Node\+World}}$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_physics_engine_wrapper_a9927ccae5bfa6fff5a329bcd55fdb006}\label{class_physics_engine_wrapper_a9927ccae5bfa6fff5a329bcd55fdb006}} 
+\index{Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}!Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}}
+\index{Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}!Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}}
+\subsubsection{\texorpdfstring{Physics\+Engine\+Wrapper()}{PhysicsEngineWrapper()}}
+{\footnotesize\ttfamily Physics\+Engine\+Wrapper\+::\+Physics\+Engine\+Wrapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_physics_engine_wrapper_aa918612e647ac8e0d5510d991752096e}\label{class_physics_engine_wrapper_aa918612e647ac8e0d5510d991752096e}} 
+\index{Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}!````~Physics\+Engine\+Wrapper@{$\sim$\+Physics\+Engine\+Wrapper}}
+\index{````~Physics\+Engine\+Wrapper@{$\sim$\+Physics\+Engine\+Wrapper}!Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}}
+\subsubsection{\texorpdfstring{$\sim$\+Physics\+Engine\+Wrapper()}{~PhysicsEngineWrapper()}}
+{\footnotesize\ttfamily Physics\+Engine\+Wrapper\+::$\sim$\+Physics\+Engine\+Wrapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physics_engine_wrapper_a616efbb6a5a787618e0d07eef552e876}\label{class_physics_engine_wrapper_a616efbb6a5a787618e0d07eef552e876}} 
+\index{Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}!get\+Particle\+Node\+World@{get\+Particle\+Node\+World}}
+\index{get\+Particle\+Node\+World@{get\+Particle\+Node\+World}!Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}}
+\subsubsection{\texorpdfstring{get\+Particle\+Node\+World()}{getParticleNodeWorld()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_node_world}{Particle\+Node\+World}} $\ast$ Physics\+Engine\+Wrapper\+::get\+Particle\+Node\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_physics_engine_wrapper_af5d784792df1ea0186bcf21fd0c7d115}\label{class_physics_engine_wrapper_af5d784792df1ea0186bcf21fd0c7d115}} 
+\index{Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}!get\+Rigid\+Body\+Node\+World@{get\+Rigid\+Body\+Node\+World}}
+\index{get\+Rigid\+Body\+Node\+World@{get\+Rigid\+Body\+Node\+World}!Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}}
+\subsubsection{\texorpdfstring{get\+Rigid\+Body\+Node\+World()}{getRigidBodyNodeWorld()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rigid_body_node_world}{Rigid\+Body\+Node\+World}} $\ast$ Physics\+Engine\+Wrapper\+::get\+Rigid\+Body\+Node\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_physics_engine_wrapper_ab373f860362e7c74dfa0eabfffe10bec}\label{class_physics_engine_wrapper_ab373f860362e7c74dfa0eabfffe10bec}} 
+\index{Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}!tick@{tick}}
+\index{tick@{tick}!Physics\+Engine\+Wrapper@{Physics\+Engine\+Wrapper}}
+\subsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Physics\+Engine\+Wrapper\+::tick (\begin{DoxyParamCaption}\item[{float}]{time\+Delta }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Sim/\+Sim/src/\+Physic\+Interfaces/\mbox{\hyperlink{_physics_engine_wrapper_8h}{Physics\+Engine\+Wrapper.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Sim/\+Sim/src/\+Physic\+Interfaces/\mbox{\hyperlink{_physics_engine_wrapper_8cpp}{Physics\+Engine\+Wrapper.\+cpp}}\end{DoxyCompactItemize}
