@@ -23,25 +23,25 @@ void PhysicsEngineWrapper::tick(float timeDelta)
 
 	m_physicsEngine.tick(timeDelta);
 
-	m_particleWorld->update();
-	m_rigidBodyWorld->update();
+	m_particleNodeWorld->update();
+	m_rigidBodyNodeWorld->update();
 }
 
 ParticleNodeWorld* PhysicsEngineWrapper::getParticleNodeWorld() const
 {
-	return m_particleWorld.get();
+	return m_particleNodeWorld.get();
 }
 
 RigidBodyNodeWorld* PhysicsEngineWrapper::getRigidBodyNodeWorld() const
 {
-	return m_rigidBodyWorld.get();
+	return m_rigidBodyNodeWorld.get();
 }
 
 void PhysicsEngineWrapper::init()
 {
-	m_particleWorld = std::make_unique<ParticleNodeWorld>();
-	m_rigidBodyWorld = std::make_unique<RigidBodyNodeWorld>();
+	m_particleNodeWorld = std::make_unique<ParticleNodeWorld>();
+	m_rigidBodyNodeWorld = std::make_unique<RigidBodyNodeWorld>();
 
-	m_physicsEngine.registerModule(m_particleWorld->getWorld(), "particle");
-	m_physicsEngine.registerModule(m_rigidBodyWorld->getWorld(), "rigid_body");
+	m_physicsEngine.registerModule(m_particleNodeWorld->getWorld(), "particle");
+	m_physicsEngine.registerModule(m_rigidBodyNodeWorld->getWorld(), "rigid_body");
 }

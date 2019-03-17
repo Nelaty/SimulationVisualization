@@ -26,6 +26,6 @@ private:
 
 	r3::PhysicsEngine m_physicsEngine;
 
-	ParticleNodeWorld_Ptr m_particleWorld;
-	RigidBodyNodeWorld_Ptr m_rigidBodyWorld;
+	ParticleNodeWorld_Ptr m_particleNodeWorld;
+	RigidBodyNodeWorld_Ptr m_rigidBodyNodeWorld;
 };
