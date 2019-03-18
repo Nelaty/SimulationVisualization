@@ -11,6 +11,9 @@
 
 #include "Examples/FallingCubeScene.h"
 
+#include <R3D/Utility/Random.h>
+#include <EC3D/Utilities/Random.h>
+
 SimulationWindow::SimulationWindow(const unsigned width,
                                    const unsigned height,
 								   const std::string& title)
@@ -22,6 +25,9 @@ SimulationWindow::SimulationWindow(const unsigned width,
 
 	m_currentScene = 0;
 
+	r3::Random::seed();
+	ec::Random::seed();
+
 	m_cooldownSceneChange = 0.2f;
 	m_cooldownSceneChangeCurrent = 0.0f;
 
@@ -30,7 +36,8 @@ SimulationWindow::SimulationWindow(const unsigned width,
 }
 
 SimulationWindow::~SimulationWindow()
-= default;
+{
+}
 
 void SimulationWindow::tick(const float timeDelta)
 {
