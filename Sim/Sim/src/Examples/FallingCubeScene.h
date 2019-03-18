@@ -17,6 +17,7 @@ public:
 	~FallingCubeScene();
 
 	void tick(float timeDelta) override;
+	void reset() override;
 
 private:
 	ec::Node* m_node;

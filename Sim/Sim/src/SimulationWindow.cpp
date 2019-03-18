@@ -67,7 +67,15 @@ void SimulationWindow::tick(const float timeDelta)
 			m_cooldownSceneChangeCurrent = 0.0f;
 		}
 	}
-	
+
+	// Check if the scene should be reset
+	if(keyboard->isKeyDown(ec::Keyboard::T))
+	{
+		if(m_activeScene)
+		{
+			m_activeScene->reset();
+		}
+	}
 }
 
 void SimulationWindow::initCameras()

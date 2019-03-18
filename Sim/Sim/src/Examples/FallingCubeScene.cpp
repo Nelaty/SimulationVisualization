@@ -42,3 +42,8 @@ void FallingCubeScene::tick(const float timeDelta)
 {
 	__super::tick(timeDelta);
 }
+
+void FallingCubeScene::reset()
+{
+	m_particle->reset();
+}
