@@ -37,8 +37,19 @@ bool RigidBodyNodeWorld::removeRigidBodyNode(RigidBodyNode* node)
 	if (found)
 	{
 		m_world->removeRigidBody(node->getRigidBody());
+		m_rigidBodyNodes.erase(removedBody);
 	}
 	return found;
+}
+
+const std::vector<RigidBodyNode*>& RigidBodyNodeWorld::getRigidBodyNodes() const
+{
+	return m_rigidBodyNodes;
+}
+
+std::vector<RigidBodyNode*>& RigidBodyNodeWorld::getRigidBodyNodes()
+{
+	return m_rigidBodyNodes;
 }
 
 void RigidBodyNodeWorld::clear()

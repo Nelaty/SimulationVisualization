@@ -29,6 +29,12 @@ public:
 	 */
 	bool removeRigidBodyNode(RigidBodyNode* node);
 
+	/** \brief Get all currently registered rigid body nodes. */
+	const std::vector<RigidBodyNode*>& getRigidBodyNodes() const;
+
+	/** \brief Get all currently registered rigid body nodes. */
+	std::vector<RigidBodyNode*>& getRigidBodyNodes();
+
 	/** \brief Unregister all currently registered rigid body nodes. */
 	void clear();
 
