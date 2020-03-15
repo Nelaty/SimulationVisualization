@@ -31,7 +31,7 @@ FallingCubeScene::FallingCubeScene(const std::string& name, SimulationWindow* wi
 	particleNodeWorld->addParticleNode(m_particleNode);
 
 	// Init force generator and register it
-	m_particleGravity = new r3::ParticleGravity(glm::vec3(0.0f, -0.1f, 0.0f));
+	m_particleGravity = new r3::ParticleGravity(glm::vec3(0.0f, -1.0f, 0.0f));
 	particleWorld->getParticleForceRegistry().add(m_particle, m_particleGravity);
 }
 
@@ -40,7 +40,7 @@ FallingCubeScene::~FallingCubeScene()
 
 void FallingCubeScene::tick(const float timeDelta)
 {
-	__super::tick(timeDelta);
+	SimulationScene::tick(timeDelta);
 }
 
 void FallingCubeScene::reset()

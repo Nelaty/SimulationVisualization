@@ -1,5 +1,6 @@
 #include "ParticleNodeWorld.h"
 #include "R3D/ParticleEngine/ParticleWorld.h"
+#include "R3D/ParticleEngine/Particle.h"
 #include "R3D/ParticleEngine/DefaultParticleEngineCI.h"
 
 #include "ParticleNode.h"
@@ -12,7 +13,8 @@ ParticleNodeWorld::ParticleNodeWorld()
 }
 
 ParticleNodeWorld::~ParticleNodeWorld()
-= default;
+{
+}
 
 void ParticleNodeWorld::update()
 {
@@ -20,6 +22,26 @@ void ParticleNodeWorld::update()
 	{
 		it->update();
 	}
+}
+
+const std::vector<ParticleNode*>& ParticleNodeWorld::getParticleNodes() const
+{
+	return m_particleNodes;
+}
+
+std::vector<ParticleNode*>& ParticleNodeWorld::getParticleNodes()
+{
+	return m_particleNodes;
+}
+
+const std::vector<r3::Particle*>& ParticleNodeWorld::getParticles() const
+{
+	return m_world->getParticles();
+}
+
+std::vector<r3::Particle*>& ParticleNodeWorld::getParticles()
+{
+	return m_world->getParticles();
 }
 
 void ParticleNodeWorld::addParticleNode(ParticleNode* node)
@@ -38,6 +60,7 @@ bool ParticleNodeWorld::removeParticleNode(ParticleNode* node)
 	if(found)
 	{
 		m_world->removeParticle(node->getParticle());
+		m_particleNodes.erase(removedNode);
 	}
 
 	return found;

@@ -6,6 +6,7 @@
 namespace r3
 {
 	class ParticleWorld;
+	class Particle;
 }
 
 class ParticleNode;
@@ -20,6 +21,16 @@ public:
 
 	/** \brief Update all particle nodes. */
 	void update();
+
+	/** \brief Get all registered particle nodes. */
+	const std::vector<ParticleNode*>& getParticleNodes() const;
+	/** \brief Get all registered particle nodes. */
+	std::vector<ParticleNode*>& getParticleNodes();
+
+	/** \brief Get all registered particles. */
+	const std::vector<r3::Particle*>& getParticles() const;
+	/** \brief Get all registered particles. */
+	std::vector<r3::Particle*>& getParticles();
 
 	/** \brief Register a new particle node. */
 	void addParticleNode(ParticleNode* node);

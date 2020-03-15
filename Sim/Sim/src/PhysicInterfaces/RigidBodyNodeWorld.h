@@ -6,6 +6,7 @@
 namespace r3
 {
 	class RigidBodyWorld;
+	class RigidBody;
 }
 
 class RigidBodyNode;
@@ -29,10 +30,15 @@ public:
 	 */
 	bool removeRigidBodyNode(RigidBodyNode* node);
 
-	/** \brief Get all currently registered rigid body nodes. */
+	/** \brief Get all registered rigid bodies. */
+	const std::vector<r3::RigidBody*>& getRigidBodies() const;
+	/** \brief Get all registered rigid bodies. */
+	std::vector<r3::RigidBody*>& getRigidBodies();
+
+	/** \brief Get all registered rigid body nodes. */
 	const std::vector<RigidBodyNode*>& getRigidBodyNodes() const;
 
-	/** \brief Get all currently registered rigid body nodes. */
+	/** \brief Get all registered rigid body nodes. */
 	std::vector<RigidBodyNode*>& getRigidBodyNodes();
 
 	/** \brief Unregister all currently registered rigid body nodes. */

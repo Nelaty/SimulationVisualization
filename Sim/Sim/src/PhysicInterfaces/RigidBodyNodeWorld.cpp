@@ -1,6 +1,7 @@
 #include "RigidBodyNodeWorld.h"
 #include "RigidBodyNode.h"
 #include "R3D/RigidBodyEngine/RigidBodyWorld.h"
+#include "R3D/RigidBodyEngine/RigidBody.h"
 #include "R3D/RigidBodyEngine/DefaultRigidBodyEngineCI.h"
 
 #include <algorithm>
@@ -40,6 +41,16 @@ bool RigidBodyNodeWorld::removeRigidBodyNode(RigidBodyNode* node)
 		m_rigidBodyNodes.erase(removedBody);
 	}
 	return found;
+}
+
+const std::vector<r3::RigidBody*>& RigidBodyNodeWorld::getRigidBodies() const
+{
+	return m_world->getRigidBodies();
+}
+
+std::vector<r3::RigidBody*>& RigidBodyNodeWorld::getRigidBodies()
+{
+	return m_world->getRigidBodies();
 }
 
 const std::vector<RigidBodyNode*>& RigidBodyNodeWorld::getRigidBodyNodes() const
