@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Examples\EmptyScene.cpp" />
     <ClCompile Include="src\Examples\FallingCubeScene.cpp" />
     <ClCompile Include="src\PhysicInterfaces\ParticleNode.cpp" />
     <ClCompile Include="src\PhysicInterfaces\RigidBodyNode.cpp" />
@@ -157,6 +158,7 @@
     <ClCompile Include="src\SimulationWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Examples\EmptyScene.h" />
     <ClInclude Include="src\Examples\FallingCubeScene.h" />
     <ClInclude Include="src\PhysicInterfaces\ParticleNode.h" />
     <ClInclude Include="src\PhysicInterfaces\RigidBodyNode.h" />
