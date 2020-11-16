@@ -5,6 +5,7 @@
 #include "EC3D/Core/SphereGeometry.h"
 #include "EC3D/Core/CylinderGeometry.h"
 #include "EC3D/Core/RectangleGeometry.h"
+#include "EC3D/Core/Material.h"
 
 #include "EC3D/Core/Camera.h"
 #include "EC3D/Core/Viewport.h"
